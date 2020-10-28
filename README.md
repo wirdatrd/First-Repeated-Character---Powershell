@@ -9,8 +9,8 @@ Essentially, the logic flow is:
 2. Use a RegEx expression to clean punctuation, numbers and white space from the string
 3. convert the input string in to a array of characters
 4. loop through the string one caracter at a time
-  4.1 if the work array contains the character, return the character
-  4.2 if not, add the character to the array.
+
+If the work array contains the character, return the character, if not, add the character to the array.
   
 Maximum size the array should ever get is 25
 
