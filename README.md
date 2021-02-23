@@ -10,7 +10,7 @@ Essentially, the logic flow is:
 3. convert the input string in to a array of characters
 4. loop through the input string one caracter at a time
 
-If the array contains the character, return the character; if not, add the character to the array. Next.
+If the array contains the character, return the character; if not add char to an array.
   
 Maximum size the array should ever get is 25 characters
 
