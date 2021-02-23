@@ -48,7 +48,6 @@ function Get-FirstRepeatChar {
     $characters = @()
     $str = ""
 
-
     ##  RegEx to get just alpha chars
     $pattern = '[^a-zA-Z]' 
      
@@ -56,12 +55,9 @@ function Get-FirstRepeatChar {
     $str = $string -replace $pattern, ''   
     
     foreach ( $char in $str.ToCharArray() ) {  
-        
         if ( $characters.Contains($char) ) {
             return $char
-        } else {  
-            $characters += $char
-        }
+        } 
     }
 
     return "No duplicate characters found."
