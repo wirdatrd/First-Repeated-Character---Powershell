@@ -57,7 +57,9 @@ function Get-FirstRepeatChar {
     foreach ( $char in $str.ToCharArray() ) {  
         if ( $characters.Contains($char) ) {
             return $char
-        } 
+        } else {  
+            $characters += $char
+        }
     }
 
     return "No duplicate characters found."
